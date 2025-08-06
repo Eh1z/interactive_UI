@@ -22,7 +22,6 @@ const App = () => {
 			<CardDisplay cardData={cardData} />
 
 			<div>
-				{/* <p> {errors && errors}</p> */}
 				{!submitted ? (
 					<CardForm
 						cardData={cardData}
