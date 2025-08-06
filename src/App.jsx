@@ -18,7 +18,7 @@ const App = () => {
 	};
 
 	return (
-		<div className="p-8 flex gap-8 flex-col lg:flex-row">
+		<div className="p-8 flex gap-8 flex-col lg:flex-row w-full justify-center items-center min-h-screen">
 			<CardDisplay cardData={cardData} />
 
 			<div>
@@ -52,7 +52,7 @@ const CardDisplay = ({ cardData }) => {
 	const { name, number, month, year, cvc } = cardData;
 
 	return (
-		<div className="p-8 bg-purple-600 text-white rounded-lg max-w-lg">
+		<div className="p-8 bg-purple-600 text-white rounded-lg max-w-xl min-w-md">
 			<p>Card Number : {number || "0000 0000 0000 0000"}</p>
 			<p>Name: {name || "John Doe"}</p>
 			<p>Expiry: {(month || "00") + "/" + (year || "00")}</p>
