@@ -47,10 +47,11 @@ const Home = () => {
 				</div>
 
 				<button
-					className="min-w-32 min-h-32 sm:min-w-64 sm:min-h-64 bg-white rounded-full text-xl  sm:text-3xl"
+					className="relative min-w-32 min-h-32 sm:min-w-64 sm:min-h-64 bg-white rounded-full text-xl sm:text-3xl group cursor-pointer flex items-center justify-center"
 					style={{ fontFamily: "Bellefair" }}
 				>
 					EXPLORE
+					<div className="absolute top-1/2 left-1/2 w-64 h-64 group-hover:w-90 group-hover:h-90 bg-white/30 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-all duration-800 ease-in-out" />
 				</button>
 			</div>
 		</div>

@@ -56,7 +56,7 @@ const Technology = () => {
 					</p>
 
 					{/* mobile image */}
-					<div className="w-full  flex justify-center items-center lg:hidden">
+					<div className="w-full  flex justify-center items-center xl:hidden">
 						<img
 							key={tech[activeIndex].img}
 							src={`/technology/image-${tech[activeIndex].img}`}
