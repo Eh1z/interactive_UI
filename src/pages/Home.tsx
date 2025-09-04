@@ -7,7 +7,7 @@ const Home = () => {
 	function getBg() {
 		if (window.innerWidth < 640) {
 			return 'url("/home/background-home-mobile.jpg")';
-		} else if (window.innerWidth < 1024) {
+		} else if (window.innerWidth < 768) {
 			return 'url("/home/background-home-tablet.jpg")';
 		} else {
 			return 'url("/home/background-home-desktop.jpg")';
