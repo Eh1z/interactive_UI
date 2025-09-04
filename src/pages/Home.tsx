@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Navbar } from "../components";
 
 const Home = () => {
 	const [bg, setBg] = useState(getBg());
@@ -24,11 +23,9 @@ const Home = () => {
 
 	return (
 		<div
-			className="padding h-screen bg-cover bg-center bg-no-repeat flex items-end"
+			className="padding min-h-screen bg-cover bg-center bg-no-repeat flex items-end"
 			style={{ backgroundImage: bg }}
 		>
-			<Navbar />
-
 			{/* Hero Content */}
 			<div className="content flex flex-col md:flex-row items-center justify-between gap-16  ">
 				<div className="flex flex-col text-center md:text-left">

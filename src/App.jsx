@@ -1,10 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, Destination, Crew, Technology } from "./pages";
+import { Navbar } from "./components";
 
 const App = () => {
 	return (
 		<div>
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/destination" element={<Destination />} />
