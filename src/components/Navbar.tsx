@@ -23,8 +23,7 @@ const Navbar = () => {
 			<div className="hidden sm:flex w-full max-w-7xl bg-white/10 backdrop-blur-xl  items-center gap-16 justify-center px-4 md:px-16 xl:px-32 py-6">
 				{navLinks.map((link, index) => (
 					<a href={link.url} key={index} className="uppercase">
-						<span className="font-bold">0{index + 1}</span>{" "}
-						{link.title}
+						<span className="font-bold">0{index}</span> {link.title}
 					</a>
 				))}
 			</div>
