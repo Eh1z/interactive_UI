@@ -1,1 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
 @import "tailwindcss";
+
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-family: "Barlow Condensed", "sans-serif";
+	}
+
+	span {
+		font-family: "Bellefair", sans-serif;
+	}
+	p {
+		font-family: "Barlow", sans-serif;
+	}
+}
+
+@theme inline {
+	--color-accent: ;
+	--color-primary: #0b0d17;
+	--color-text: #d0d6f9;
+
+	--color-light: ;
+	--color-dark: ;
+}
+
+/* Common Styles */
+.padding {
+	@apply px-4 sm:px-16 md:px-32 py-16 sm:py-32 relative w-full;
+}
+.content {
+	@apply container mx-auto;
+}
