@@ -96,7 +96,7 @@ const Crew = () => {
 				{/* Crew image */}
 				<div className="w-full max-w-[500px] h-[500px] flex justify-center items-center">
 					<img
-						key={crew[activeIndex].img} // helps trigger animation
+						key={crew[activeIndex].img}
 						src={`/crew/image-${crew[activeIndex].img}`}
 						alt={crew[activeIndex].name}
 						className="w-full h-auto object-contain transition-all duration-700 ease-[cubic-bezier(0.87,0,0.13,1)]"
